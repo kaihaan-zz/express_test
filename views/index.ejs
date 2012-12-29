@@ -5,7 +5,22 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+	<div id="header" class="centre, border"> <h1><%= title %></h1> </div>
+	<div id="main-content" class="centre, border">
+		<pre>
+blah
+blah
+de
+blah
+exomundi
+majorus in markem dolrit :-)
+		</pre>
+		<div id="search"> 
+			<!-- search form -->
+			<form method="get" action="/search" id="search_form">
+  				<input name="q" type="text" size="40" placeholder="" />
+			</form>
+		</div>
+	</div>
   </body>
 </html>

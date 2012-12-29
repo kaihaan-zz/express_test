@@ -1,6 +1,7 @@
 
 /**
  * Module dependencies.
+ * setup with 'quickstart' express framework --sessions ejs stylus
  */
 
 var express = require('express')
