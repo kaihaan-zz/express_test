@@ -9,6 +9,7 @@
 }
 /* -- identities */
 #header {
+  position: relative;
   height: 100px;
   width: 500px;
   margin: 0 auto;

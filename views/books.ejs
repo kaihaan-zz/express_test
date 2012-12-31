@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<div id="header" class="centre, border">
+		<p> enter book search term </p>
+		<div id="search"> 
+			<!-- search form -->
+			<form method="post" action="/books" id="search_form">
+  				<input name="q" type="text" size="40" placeholder="Book..." />
+			</form>
+		</div>
+	</div>
+
+
+	<div id="main-content" class="centre, border">
+		<% for(var i=0; i < items.length; i++) {%>
+   		<li><%= items[i].volumeInfo.title %></li>
+		<% } %>
+	</div>
+	
+  </body>
+</html>
