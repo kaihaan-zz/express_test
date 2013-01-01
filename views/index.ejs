@@ -5,14 +5,22 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-	<div id="header" class="centre, border"> <h1><%= title %></h1> <%= address %></div>
-	<div id="main-content" class="centre, border">
-		<img src="images/test_map.png" alt="Home!" width="500" height="400">
-		<div id="search"> 
-			<!-- search form -->
-			<form method="post" action="/" id="search_form">
-  				<input name="q" type="text" size="40" placeholder="Book..." />
-			</form>
+  	<div id="page">
+  		<div id="nav">
+			<a href="/books"><img src="images/books50x44.png"></a>
+  		</div>
+
+		<div id="map">
+			<div id="header">address : <%= address %></div>
+			<div id="main-content">
+				<img src="images/test_map.png" alt="Home!" width="500" height="400">
+				<div id="search"> 
+					<!-- search form -->
+					<form method="post" action="/" id="search_form">
+		  				<input name="q" type="text" size="40" placeholder="Book..." />
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
   </body>

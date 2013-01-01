@@ -1,32 +1,55 @@
 /* -- classes */
 
-$width = 500px
-
-.centre {
-	margin-left: auto;
-	margin-right: auto;
-}
+$width = 580px
+$vert_nav = 80px
+$border = 5px;
 
 
-.border {
-	border-style: solid;
-	border-color: black;
-}
 
 /* -- identities */
 
+#page {
+    margin: 0 auto;
+    position: relative;
+    width: $width;
+    border: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#nav {
+    position: relative;
+    width: $vert_nav;
+    float: left;
+    min-height:400px;
+    margin: 0;
+}
+
+#map, #books {
+    position: relative;
+    width: ($width - $vert_nav);
+    float: left;
+    margin: 0;
+    overflow: auto;
+}
+
+
 #header {
     position: relative;
-	height: 100px;
-	width: $width;
-	margin: 0 auto;
+    background-color: #F0F0F0; 
+	width: ($width - $vert_nav - $border - $border);
+    margin: 0;
+    border: $border solid transparent;
+    float: left;
+    min-height: 50px;
 }
 
 #main-content {
 	position: relative;
-  	width: $width;
-  	margin: 0 auto;
+  	width: ($width - $vert_nav);
     text-align: left;
+    margin: 0;
+    float: left;
 }
 
 #search {
@@ -34,6 +57,7 @@ $width = 500px
 	left: 10px;
 	top: 10px;
 	z-index: 1;
+    height: 50px;
 }
 
 #search_form {
